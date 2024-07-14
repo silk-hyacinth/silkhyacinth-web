@@ -11,21 +11,15 @@
 
     <body id="body">
         <div class="meteor-shower" id="meteor-shower"> 
-            <div class="star"></div>
-            <div class="star"></div>
-            <div class="star"></div>
-            <div class="star"></div>
-            <div class="star"></div>
-            <div class="star"></div>
-            <div class="star"></div>
-            <div class="star"></div>
-            <div class="star"></div>
-            <div class="star"></div>
-            <div class="star"></div>
-            <div class="star"></div>
-            <div class="star"></div>
-            <div class="star"></div>
-            <div class="star"></div>
+            <div class="star" id="star"></div>
+            <div class="star" id="star"></div>
+            <div class="star" id="star"></div>
+            <div class="star" id="star"></div>
+            <div class="star" id="star"></div>
+            <div class="star" id="star"></div>
+            <div class="star" id="star"></div>
+            <div class="star" id="star"></div>
+            <div class="star" id="star"></div>
         </div>
 
         <div class="content">
@@ -35,10 +29,13 @@
                         <a href="http://www.silkhyacinth.com/home/">home</a>
                     </li>
                     <li>
-                        <a href="http://www.silkhyacinth.com/about/">about</a>
+                        <a href="#projects">projects</a>
                     </li>
                     <li>
-                        <a href="http://www.silkhyacinth.com/projects/">projects</a>
+                        <a href="#piano">piano</a>
+                    </li>
+                    <li>
+                        <a href="http://www.silkhyacinth.com/blog/">blog</a>
                     </li>
                 </ul>
             </nav>
@@ -64,19 +61,98 @@
             </nav>
 
             <div class="header">
-                <h2>I am become Death,</h> <br>
-                <h2>Destroyer of Worlds</h> <br>
-                <h3>. .. .. .... . . ..... . ..</h3>
+                <div class="leftalign">
+                    <p class="hi">hello there. i'm</p>
+                    <h2 class="headern">Benjamin Wang</h> <br>
+                    <h3 class="headerh">Certified living human.</h3>
+                    <h3 class="headerp">
+                        Welcome to my website! I'm a student who loves coding, music, and chemistry.<br><br>try clicking the screen!</h3>
+                    <h3 class="scroll">S C R O L L</h3>
+                    <div class="line"></div>
+                </div>
+            </div>
+
+            <div class="projects" id="projects">
+
+                <div class="projectcontainer">
+                    <div class="leftalign">
+                        <h class="sectionheading">My Projects</h>
+                        <div style="height:2px;background-color:#70d8e6;width:70px;float:right;margin-top:30px"></div>
+                    </div>
+                    <div></div>
+                    <div class="gridimage">
+                        <a href="http://silkhyacinth.com/">
+                            <img src="images/website.png">
+                        </a>
+                    </div>
+                    <div class="gridtextwrapper">
+                        <div class="gridtitle">
+                            <a href="http://silkhyacinth.com/">silkhyacinth.com</a>
+                        </div>
+                        <div class="griddescription">
+                            <p>My personal website, which you are on right now! Built from scratch with HTML / JS / CSS on a custom backend that I host on a DigitalOcean VPS.</p>
+                        </div>
+
+                    </div>
+
+                    <div class="gridimage">
+                        <a href="https://github.com/silk-hyacinth/corundum">
+                            <img src="images/corundum.png">
+                        </a>
+                    </div>
+                    <div class="gridtextwrapper">
+                        <div class="gridtitle">
+                            <a href="https://github.com/silk-hyacinth/corundum">Corundum</a>
+                        </div>
+                        <div class="griddescription">
+                            <p>A custom stock viewer and GUI that I built that can pull stock data from AlphaVantage's stock API, with a custom GUI built with QT to select specific time frames and stocks to view, that creates  an interactive graph powered by plotly</p>
+                        </div>
+                    </div>
+
+                    <div class="gridimage">
+                        <a href="https://github.com/silk-hyacinth/neuralnet-python3-customized/tree/main">
+                            <img src="images/net.png">
+                        </a>
+                        
+                    </div>
+                    <div class="gridtextwrapper">
+                        <div class="gridtitle">
+                            <a href="https://github.com/silk-hyacinth/neuralnet-python3-customized/tree/main">Neural net from scratch</a>
+                        </div>
+                        <div class="griddescription">
+                            <p>A custom neural net that I built with Python and Numpy that can identify handwirtten numbers, inspired by Michael Nielsen's book. I also created a slideshow presentation to go along with it to explain the math and algorithms.</p>
+                        </div>
+                    </div>
+
+                    <div></div>
+                    <div id="piano" class="rightalign">
+                        <h style="color:rgb(45, 140, 168)"class="sectionheading">Piano</h>
+                        <div style="height:2px;background-color:rgb(45, 140, 168);width:180px;float:left;margin-top:30px"></div>
+                        <p class="griddescription">Here is a collection of some of my favorite piano pieces that I have recorded</p>
+                    </div>
+                    <div class="gridimage">
+                        <a style="color:rgba(45, 139, 168, 0.616)" href="https://youtu.be/cWHGgWZbMdI">
+                            <img src="images/mq2.webp">
+                        </a>
+                        <p class="griddescription">Felix Mendelssohn - Piano Trio no. 1</p>
+                    </div>
+                    <div class="gridimage">
+                        <a style="color:rgba(45, 139, 168, 0.616)" href="https://youtu.be/u1muA1nHxYc">
+                            <img src="images/rach.webp">
+                        </a>
+                        <p class="griddescription">Sergei Rachmaninoff - Prelude in G Minor</p>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="footer">
+                <p style="position:fixed;bottom:0" class="griddescription">hello :)</p>
             </div>
         </div>
 
-        <div class="footer">
-            <div style="width:calc(100vw - 90px); height:1px; background:#8d8d8d;"></div>
-            <div class="footer-text">
-                <p>i'm <br> never gonna give you up. never gonna let you down. never gonna turn around and, desert you<br>never gonna make you cry. never gonna say goodbye. never gonna tell a lie and, hurt you <br> by the way, try clicking on the background!</p> 
-            </div>
 
 
-        </div>
     </body>
 </html>
