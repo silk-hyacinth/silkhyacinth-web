@@ -1,18 +1,18 @@
 html {
-    height:220%;
+    height:100%;
     margin:0;
 }
 
 
 @media only screen and (max-height: 600px) {
   html {
-    height:350%;
+    height:100%;
   }
 }
 
 body {
     margin:0;
-    background: linear-gradient(to bottom, #0d1d31 0%,#162f3f 100%);
+    background: linear-gradient(to bottom, #030410 0%, #060a1c 75%, #2c1a35 100%);
     min-height:100;
     background-repeat: no-repeat;
 
@@ -72,7 +72,8 @@ a:hover {
     font-family: "VT323", monospace;
     color:#ffffff;
     position:absolute;
-    top: calc(50vh - 2.65em);
+    top: 50vh;
+    transform: translateY(-50%);
     width:100%;
     text-align:center;
     margin-left: 10;
@@ -230,6 +231,7 @@ a:hover {
     transform: translate3d(calc(108vw + 5em), 0, 0);
     --direction: -30em;
     --star-color: rgb(135, 174, 224);
+    animation: fall var(--fall-duration) var(--fall-delay) linear infinite, tail var(--tail-fade-duration) var(--fall-delay) ease-out infinite;
 }
 
 .shooting-star {
