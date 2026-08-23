@@ -6,8 +6,17 @@
         <link href="styles.css" rel="stylesheet"/>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&family=VT323&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Ubuntu:wght@300&family=VT323&display=swap" rel="stylesheet">
         <script src="script.js"></script>
+
+        <script type="speculationrules">
+        {
+            "prerender": [{
+                "urls": ["projects.html"],
+                "eagerness": "moderate"
+            }]
+        }
+        </script>
     </head>
 
     <body id="body">
@@ -27,10 +36,10 @@
             <nav class="navbar">
                 <ul>
                     <li>
-                        <a href="http://www.silkhyacinth.com/home/">home</a>
+                        <a href="http://www.silkhyacinth.com/">home</a>
                     </li>
                     <li>
-                        <a href="#projects">projects</a>
+                        <a href="projects.html">projects</a>
                     </li>
                     <li>
                         <a href="#piano">piano</a>
@@ -62,14 +71,18 @@
             </nav>
 
             <div class="header">
-                <div class="leftalign">
-                    <p class="hi">hello there-</p>
-                    <h2 class="headern">Benjamin Wang</h> <br>
+                <div class="centeralign">
+                    <p class="hi">(._.)</p>
+                    <h2 class="headern">Benjamin Wang</h2>
                     <h3 class="headerp">
-                        Duke math/cs<br>
+                        math/cs/piano @ duke
                         <br>try clicking the screen!</h3>
                 </div>
             </div>
+
+            <button class="stars-toggle" id="stars-toggle" type="button">
+                <span class="stars-toggle-box"></span>disable shooting stars
+            </button>
 
         </div>
 

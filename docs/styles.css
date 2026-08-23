@@ -68,9 +68,10 @@ a:hover {
 }
 
 .header {
-    font-size: 65px;
-    font-family: "VT323", monospace;
-    color:#ffffff;
+    font-size: 40px;
+    font-family: "EB Garamond", serif;
+    line-height: 1;
+    color:#e8e5df;
     position:absolute;
     top: 50vh;
     transform: translateY(-50%);
@@ -84,14 +85,20 @@ a:hover {
   text-align: left;
 }
 
+.centeralign {
+  display:inline-block;
+  text-align: center;
+}
+
 .rightalign {
   display:inline-block;
   text-align:right;
 }
 
 .hi {
-  color:#70d8e6;
-  font-size:20px;
+  color:rgb(181, 181, 181);
+  font-family: "VT323", monospace;
+  font-size:25px;
   margin-bottom: 0px;
 }
 
@@ -102,14 +109,16 @@ a:hover {
 
 .headerh {
   color:rgb(190, 190, 190);
-  font-size:65px;
+  font-size:45px;
   margin-top:0px;
   margin-bottom:0px;
 }
 
 .headerp {
-  color: rgb(129, 129, 129);
+  color: rgb(181, 181, 181);
   font-size: 20px;
+  margin-top: 4px;
+  margin-bottom: 0px;
 }
 
 .scroll {
@@ -446,15 +455,135 @@ a:hover {
 }
 
 ::-webkit-scrollbar-track {
-  background: linear-gradient(to bottom, #0d1d31 0%,#515175 100%);
+  background: linear-gradient(to bottom, #030410 0%, #060a1c 75%, #2c1a35 100%);
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #6b6197;
+  background: rgba(232, 229, 223, 0.16);
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #4c3c57;
+  background: rgba(232, 229, 223, 0.28);
+}
+
+/* firefox */
+html {
+  scrollbar-color: rgba(232, 229, 223, 0.16) #060a1c;
+}
+
+
+/* shooting stars toggle */
+
+.stars-toggle {
+  position:fixed;
+  left:40px;
+  bottom:20px;
+  z-index:2;
+  display:flex;
+  align-items:center;
+  padding:0;
+  border:none;
+  background:none;
+  cursor:pointer;
+  font-family:"EB Garamond", serif;
+  font-size:15px;
+  color:#e8e5df;
+}
+
+.stars-toggle-box {
+  box-sizing:border-box;
+  width:11px;
+  height:11px;
+  margin-right:8px;
+  background:#e8e5df;
+  border:1px solid #e8e5df;
+}
+
+.stars-toggle.off .stars-toggle-box {
+  background:none;
+}
+
+.stars-off {
+  visibility:hidden;
+}
+
+.stars-off .star, .stars-off .shooting-star {
+  animation-play-state:paused;
+}
+
+
+/* projects page */
+
+.projects-body {
+  background-attachment: fixed;
+}
+
+.projects-nav {
+  float:none;
+  position:fixed;
+  top:2vh;
+  left:0;
+  width:auto;
+  z-index:1;
+}
+
+.projects-page {
+  position:relative;
+  z-index:1;
+  clear:both;
+  margin-left:220px;
+  margin-right:40px;
+  min-height:100vh;
+  box-sizing:border-box;
+  padding-bottom:10vh;
+  font-family:"EB Garamond", serif;
+  font-size:19px;
+  line-height:1.5;
+  color:#e8e5df;
+  text-align:left;
+}
+
+.projects-page h1 {
+  font-size:40px;
+  font-weight:normal;
+  margin-top:0;
+  margin-bottom:24px;
+}
+
+.projects-page h2 {
+  font-size:28px;
+  font-weight:normal;
+  margin-top:36px;
+  margin-bottom:6px;
+  color:rgb(190, 190, 190)
+}
+
+.projects-page h3 {
+  font-size:21px;
+  font-weight:normal;
+  color:rgb(190, 190, 190);
+  margin-top:18px;
+  margin-bottom:4px;
+}
+
+.projects-page p {
+  margin-top:0;
+  margin-bottom:14px;
+}
+
+.projects-page ul {
+  margin-top:0;
+  margin-bottom:14px;
+  padding-left:20px;
+}
+
+.projects-page li {
+  list-style-type:disc;
+  margin-bottom:4px;
+}
+
+.projects-page a {
+  text-decoration:underline;
 }
 
 
